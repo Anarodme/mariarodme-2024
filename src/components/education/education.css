@@ -1,0 +1,52 @@
+.education-container {
+  padding: 20px;
+}
+
+.section-title {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.degree-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.degree-card {
+  flex: 1 1 300px;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.degree-card:hover {
+  transform: translateY(-5px);
+}
+
+.degree-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.degree-logo {
+  width: 100px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.degree-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.degree-subtitle {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}

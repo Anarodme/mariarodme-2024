@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/mariarodme-2024/static/css/main.7b8e7e5a.css",
+    "main.js": "/mariarodme-2024/static/js/main.c0cd4d09.js",
+    "static/media/about.jpg": "/mariarodme-2024/static/about.5abe33fbd03d140d5821.png",
+    "static/media/profile.jpg": "/mariarodme-2024/static/media/profile.a8757a1a2f3ee325db6a.jpg",
+    "static/media/cv.pdf": "/mariarodme-2024/static/media/cv.ed58bb8ac8cf9d097d02.pdf",
+    "index.html": "/mariarodme-2024/index.html",
+    "main.7b8e7e5a.css.map": "/mariarodme-2024/static/css/main.7b8e7e5a.css.map",
+    "main.c0cd4d09.js.map": "/mariarodme-2024/static/js/main.c0cd4d09.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7b8e7e5a.css",
+    "static/js/main.c0cd4d09.js"
+  ]
+}
