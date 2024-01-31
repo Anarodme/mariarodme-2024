@@ -453,7 +453,7 @@
               "div",
               { className: "about__container container grid" },
               c.a.createElement("img", {
-                src: d.a,
+                src: "static/media/about.jpg",
                 alt: "",
                 className: "about__img",
               }),
@@ -468,7 +468,7 @@
                 ),
                 c.a.createElement(
                   "a",
-                  { download: "", href: N.a, className: "button button--flex" },
+                  { download: "", href: "static/media/cv.pdf", className: "button button--flex" },
                   "Download CV",
                   c.a.createElement(
                     "svg",
@@ -823,7 +823,7 @@
                     onClick: () => handleCardClick(0),
                   },
                   c.a.createElement("img", {
-                    src: d.a,
+                    src: "static/media/logoUtn.png",
                     alt: "Universidad Técnica Nacional",
                     className: "degree-logo",
                   }),
