@@ -868,7 +868,7 @@
                     onClick: () => handleCardClick(1),
                   },
                   c.a.createElement("img", {
-                    src: d.a,
+                    src: "static/media/logoCtp.png",
                     alt: "CTP Ricardo Castro Beer",
                     className: "degree-logo",
                   }),
