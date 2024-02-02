@@ -793,139 +793,262 @@
           );
         },
         j =
-        (t(25),
-        function () {
-          let expandedIndex = null;
+          (t(25),
+          function () {
+            let expandedIndex = null;
 
-          const handleCardClick = (index) => {
-            if (expandedIndex === index) {
-              expandedIndex = null;
-            } else {
-              expandedIndex = index;
-            }
-          };
+            const handleCardClick = (index) => {
+              if (expandedIndex === index) {
+                expandedIndex = null;
+              } else {
+                expandedIndex = index;
+              }
+            };
 
-          return c.a.createElement(
-            "div",
-            { className: "education-container", id: "education" },
-            c.a.createElement(
-              "h2",
-              { className: "section-title" },
-              "Education"
-            ),
-            c.a.createElement(
+            return c.a.createElement(
               "div",
-              { className: "degree-cards-container" },
+              { className: "education-container", id: "education" },
               c.a.createElement(
-                "div",
-                {
-                  key: 0,
-                  className: `degree-card ${
-                    expandedIndex === 0 ? "expanded" : ""
-                  }`,
-                  onClick: () => handleCardClick(0),
-                },
-                c.a.createElement("img", {
-                  src: "static/media/logoUtn.png",
-                  alt: "Universidad Técnica Nacional",
-                  className: "degree-logo",
-                }),
-                c.a.createElement(
-                  "h3",
-                  { className: "degree-title" },
-                  "Universidad Técnica Nacional"
-                ),
-                c.a.createElement(
-                  "h4",
-                  { className: "degree-subtitle" },
-                  "Bachelor's degree Business Management Administration"
-                ),
-                expandedIndex === 0 &&
-                  c.a.createElement(
-                    "div",
-                    { className: "degree-info" },
-                    c.a.createElement(
-                      "p",
-                      null,
-                      "I have studied basic business administration subjects like marketing, project management, cost accounting, occupational safety, business law, etc."
-                    ),
-                    c.a.createElement(
-                      "p",
-                      null,
-                      "Apart from this, I have done courses on Word, Excel, spreadsheets, customer service."
-                    ),
-                    c.a.createElement("a", {
-                      href: "#",
-                      target: "_blank",
-                      rel: "noopener noreferrer",
-                    })
-                  )
+                "h2",
+                { className: "section-title" },
+                "Education"
               ),
               c.a.createElement(
                 "div",
-                {
-                  key: 1,
-                  className: `degree-card ${
-                    expandedIndex === 1 ? "expanded" : ""
-                  }`,
-                  onClick: () => handleCardClick(1),
-                },
-                c.a.createElement("img", {
-                  src: "static/media/logoCtp.png",
-                  alt: "CTP Ricardo Castro Beer",
-                  className: "degree-logo",
-                }),
+                { className: "degree-cards-container" },
                 c.a.createElement(
-                  "h3",
-                  { className: "degree-title" },
-                  "CTP Ricardo Castro Beer"
+                  "div",
+                  {
+                    key: 0,
+                    className: `degree-card ${
+                      expandedIndex === 0 ? "expanded" : ""
+                    }`,
+                    onClick: () => handleCardClick(0),
+                  },
+                  c.a.createElement("img", {
+                    src: "static/media/logoUtn.png",
+                    alt: "Universidad Técnica Nacional",
+                    className: "degree-logo",
+                  }),
+                  c.a.createElement(
+                    "h3",
+                    { className: "degree-title" },
+                    "Universidad Técnica Nacional"
+                  ),
+                  c.a.createElement(
+                    "h4",
+                    { className: "degree-subtitle" },
+                    "Bachelor's degree Business Management Administration"
+                  ),
+                  expandedIndex === 0 &&
+                    c.a.createElement(
+                      "div",
+                      { className: "degree-info" },
+                      c.a.createElement(
+                        "p",
+                        null,
+                        "I have studied basic business administration subjects like marketing, project management, cost accounting, occupational safety, business law, etc."
+                      ),
+                      c.a.createElement(
+                        "p",
+                        null,
+                        "Apart from this, I have done courses on Word, Excel, spreadsheets, customer service."
+                      ),
+                      c.a.createElement("a", {
+                        href: "#",
+                        target: "_blank",
+                        rel: "noopener noreferrer",
+                      })
+                    )
                 ),
                 c.a.createElement(
-                  "h4",
-                  { className: "degree-subtitle" },
-                  "Executive Secretarial Technician"
-                ),
-                expandedIndex === 1 &&
+                  "div",
+                  {
+                    key: 1,
+                    className: `degree-card ${
+                      expandedIndex === 1 ? "expanded" : ""
+                    }`,
+                    onClick: () => handleCardClick(1),
+                  },
+                  c.a.createElement("img", {
+                    src: "static/media/logoCtp.png",
+                    alt: "CTP Ricardo Castro Beer",
+                    className: "degree-logo",
+                  }),
+                  c.a.createElement(
+                    "h3",
+                    { className: "degree-title" },
+                    "CTP Ricardo Castro Beer"
+                  ),
+                  c.a.createElement(
+                    "h4",
+                    { className: "degree-subtitle" },
+                    "Executive Secretarial Technician"
+                  ),
+                  expandedIndex === 1 &&
+                    c.a.createElement(
+                      "div",
+                      { className: "degree-info" },
+                      c.a.createElement(
+                        "p",
+                        null,
+                        "Proficient in various office software suites such as Microsoft Office (Word, Excel, PowerPoint, Outlook) and Google Workspace."
+                      ),
+                      c.a.createElement(
+                        "p",
+                        null,
+                        "Experienced in maintaining confidential records, drafting documents, and proofreading reports with a high level of accuracy."
+                      ),
+                      c.a.createElement(
+                        "p",
+                        null,
+                        "Strong interpersonal and communication skills, adept at interacting with clients, executives, and colleagues professionally and courteously."
+                      ),
+                      c.a.createElement(
+                        "p",
+                        null,
+                        "Knowledgeable about office etiquette, protocols, and best practices to maintain a professional and organized work environment."
+                      ),
+                      c.a.createElement(
+                        "p",
+                        null,
+                        "Capable of multitasking and prioritizing tasks efficiently to meet deadlines and support the smooth functioning of the executive's office."
+                      ),
+                      c.a.createElement("a", {
+                        href: "#",
+                        target: "_blank",
+                        rel: "noopener noreferrer",
+                      })
+                    )
+                )
+              )
+            );
+          }),
+        l =
+          (t(25),
+          function () {
+            return c.a.createElement(
+              "section",
+              { className: "courses section", id: "courses" },
+              c.a.createElement(
+                "h2",
+                { className: "section__title" },
+                "Courses"
+              ),
+              c.a.createElement(
+                "div",
+                { className: "courses__container container grid" },
+                c.a.createElement(
+                  "div",
+                  { className: "cert-card" },
                   c.a.createElement(
                     "div",
-                    { className: "degree-info" },
+                    { className: "content" },
                     c.a.createElement(
-                      "p",
-                      null,
-                      "Proficient in various office software suites such as Microsoft Office (Word, Excel, PowerPoint, Outlook) and Google Workspace."
+                      "a",
+                      {
+                        href: "https://www.scrumstudy.com/certification/verify?type=SFC&number=873873",
+                        target: "_blank",
+                        rel: "noopener noreferrer",
+                      },
+                      c.a.createElement("div", {
+                        className: "content-overlay",
+                      }),
+                      c.a.createElement(
+                        "div",
+                        {
+                          className: "cert-header",
+                          style: { backgroundColor: "#dddddd" },
+                        },
+                        c.a.createElement("img", {
+                          className: "logo_img",
+                          src: "static/media/scrum.png",
+                          alt: "SCRUMStudy",
+                        })
+                      ),
+                      c.a.createElement(
+                        "div",
+                        { className: "content-details fadeIn-top" },
+                        c.a.createElement(
+                          "h3",
+                          { className: "title" },
+                          "Certificate"
+                        )
+                      )
+                    )
+                  ),
+                  c.a.createElement(
+                    "div",
+                    { className: "cert-body" },
+                    c.a.createElement(
+                      "h2",
+                      { className: "cert-body-title" },
+                      "Scrum Fundamentals Certified (SFC™)"
                     ),
                     c.a.createElement(
-                      "p",
-                      null,
-                      "Experienced in maintaining confidential records, drafting documents, and proofreading reports with a high level of accuracy."
-                    ),
-                    c.a.createElement(
-                      "p",
-                      null,
-                      "Strong interpersonal and communication skills, adept at interacting with clients, executives, and colleagues professionally and courteously."
-                    ),
-                    c.a.createElement(
-                      "p",
-                      null,
-                      "Knowledgeable about office etiquette, protocols, and best practices to maintain a professional and organized work environment."
-                    ),
-                    c.a.createElement(
-                      "p",
-                      null,
-                      "Capable of multitasking and prioritizing tasks efficiently to meet deadlines and support the smooth functioning of the executive's office."
-                    ),
-                    c.a.createElement("a", {
-                      href: "#",
-                      target: "_blank",
-                      rel: "noopener noreferrer",
-                    })
+                      "h3",
+                      { className: "cert-body-subtitle" },
+                      "SCRUMStudy"
+                    )
                   )
+                ),
+                c.a.createElement(
+                  "div",
+                  { className: "cert-card" },
+                  c.a.createElement(
+                    "div",
+                    { className: "content" },
+                    c.a.createElement(
+                      "a",
+                      {
+                        href: "https://www.linkedin.com/learning/certificates/02cff069cbc420bfcd8f2facc75b9449d420e1672a6a3727b52a20f50b145727?trk=backfilled_certificate",
+                        target: "_blank",
+                        rel: "noopener noreferrer",
+                      },
+                      c.a.createElement("div", {
+                        className: "content-overlay",
+                      }),
+                      c.a.createElement(
+                        "div",
+                        {
+                          className: "cert-header",
+                          style: { backgroundColor: "#dddddd" },
+                        },
+                        c.a.createElement("img", {
+                          className: "logo_img",
+                          src: "static/media/linkedin.jpg",
+                          alt: "LinkedIn",
+                        })
+                      ),
+                      c.a.createElement(
+                        "div",
+                        { className: "content-details fadeIn-top" },
+                        c.a.createElement(
+                          "h3",
+                          { className: "title" },
+                          "Certificate"
+                        )
+                      )
+                    )
+                  ),
+                  c.a.createElement(
+                    "div",
+                    { className: "cert-body" },
+                    c.a.createElement(
+                      "h2",
+                      { className: "cert-body-title" },
+                      "Office/Microsoft 365: Trabajo colaborativo"
+                    ),
+                    c.a.createElement(
+                      "h3",
+                      { className: "cert-body-subtitle" },
+                      "LinkedIn"
+                    )
+                  )
+                )
               )
-            )
-          );
-        
-        }),
-        
+            );
+          }),
         T = t(11),
         W =
           (t(29),
