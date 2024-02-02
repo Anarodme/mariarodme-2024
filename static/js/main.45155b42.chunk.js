@@ -1016,7 +1016,7 @@
                         },
                         c.a.createElement("img", {
                           className: "logo_img",
-                          src: "static/media/linkedin.jpg",
+                          src: "static/media/linkedin.png",
                           alt: "LinkedIn",
                         })
                       ),
@@ -1043,6 +1043,542 @@
                       "h3",
                       { className: "cert-body-subtitle" },
                       "LinkedIn"
+                    )
+                  )
+                ),
+                c.a.createElement(
+                  "div",
+                  { className: "cert-card" },
+                  c.a.createElement(
+                    "div",
+                    { className: "content" },
+                    c.a.createElement(
+                      "a",
+                      {
+                        href: " https://www.linkedin.com/learning/certificates/68c910c6da27dabbfedff2a230c94dcab213ff0623b40f13340804d16191cf54?trk=backfilled_certificate",
+                        target: "_blank",
+                        rel: "noopener noreferrer",
+                      },
+                      c.a.createElement("div", {
+                        className: "content-overlay",
+                      }),
+                      c.a.createElement(
+                        "div",
+                        {
+                          className: "cert-header",
+                          style: { backgroundColor: "#dddddd" },
+                        },
+                        c.a.createElement("img", {
+                          className: "logo_img",
+                          src: "static/media/linkedin.png",
+                          alt: "Linkedin",
+                        })
+                      ),
+                      c.a.createElement(
+                        "div",
+                        { className: "content-details fadeIn-top" },
+                        c.a.createElement(
+                          "h3",
+                          { className: "title" },
+                          "Certificate"
+                        )
+                      )
+                    )
+                  ),
+                  c.a.createElement(
+                    "div",
+                    { className: "cert-body" },
+                    c.a.createElement(
+                      "h2",
+                      { className: "cert-body-title" },
+                      "Fundamentals of customer service"
+                    ),
+                    c.a.createElement(
+                      "h3",
+                      { className: "cert-body-subtitle" },
+                      "Linkedin"
+                    )
+                  )
+                ),
+                c.a.createElement(
+                  "div",
+                  { className: "cert-card" },
+                  c.a.createElement(
+                    "div",
+                    { className: "content" },
+                    c.a.createElement(
+                      "a",
+                      {
+                        target: "_blank",
+                        rel: "noopener noreferrer",
+                      },
+                      c.a.createElement("div", {
+                        className: "content-overlay",
+                      }),
+                      c.a.createElement(
+                        "div",
+                        {
+                          className: "cert-header",
+                          style: { backgroundColor: "#dddddd" },
+                        },
+                        c.a.createElement("img", {
+                          className: "logo_img",
+                          src: "static/media/cenecoop.png",
+                          alt: "CENECOOP",
+                        })
+                      ),
+                      c.a.createElement(
+                        "div",
+                        { className: "content-details fadeIn-top" },
+                        c.a.createElement(
+                          "h3",
+                          { className: "title" },
+                          "Certificate"
+                        )
+                      )
+                    )
+                  ),
+                  c.a.createElement(
+                    "div",
+                    { className: "cert-body" },
+                    c.a.createElement(
+                      "h2",
+                      { className: "cert-body-title" },
+                      "Customer service"
+                    ),
+                    c.a.createElement(
+                      "h3",
+                      { className: "cert-body-subtitle" },
+                      "CENECOOP"
+                    )
+                  )
+                ),
+                c.a.createElement(
+                  "div",
+                  { className: "cert-card" },
+                  c.a.createElement(
+                    "div",
+                    { className: "content" },
+                    c.a.createElement(
+                      "a",
+                      {
+                        target: "_blank",
+                        rel: "noopener noreferrer",
+                      },
+                      c.a.createElement("div", {
+                        className: "content-overlay",
+                      }),
+                      c.a.createElement(
+                        "div",
+                        {
+                          className: "cert-header",
+                          style: { backgroundColor: "#dddddd" },
+                        },
+                        c.a.createElement("img", {
+                          className: "logo_img",
+                          src: "static/media/ipai.png",
+                          alt: "IPAI",
+                        })
+                      ),
+                      c.a.createElement(
+                        "div",
+                        { className: "content-details fadeIn-top" },
+                        c.a.createElement(
+                          "h3",
+                          { className: "title" },
+                          "Certificate"
+                        )
+                      )
+                    )
+                  ),
+                  c.a.createElement(
+                    "div",
+                    { className: "cert-body" },
+                    c.a.createElement(
+                      "h2",
+                      { className: "cert-body-title" },
+                      "English conversational"
+                    ),
+                    c.a.createElement(
+                      "h3",
+                      { className: "cert-body-subtitle" },
+                      "IPAI Language school"
+                    )
+                  )
+                ),
+                c.a.createElement(
+                  "div",
+                  { className: "cert-card" },
+                  c.a.createElement(
+                    "div",
+                    { className: "content" },
+                    c.a.createElement(
+                      "a",
+                      {
+                        target: "_blank",
+                        rel: "noopener noreferrer",
+                      },
+                      c.a.createElement("div", {
+                        className: "content-overlay",
+                      }),
+                      c.a.createElement(
+                        "div",
+                        {
+                          className: "cert-header",
+                          style: { backgroundColor: "#dddddd" },
+                        },
+                        c.a.createElement("img", {
+                          className: "logo_img",
+                          src: "static/media/una.png",
+                          alt: "UNA",
+                        })
+                      ),
+                      c.a.createElement(
+                        "div",
+                        { className: "content-details fadeIn-top" },
+                        c.a.createElement(
+                          "h3",
+                          { className: "title" },
+                          "Certificate"
+                        )
+                      )
+                    )
+                  ),
+                  c.a.createElement(
+                    "div",
+                    { className: "cert-body" },
+                    c.a.createElement(
+                      "h2",
+                      { className: "cert-body-title" },
+                      "Receptionist"
+                    ),
+                    c.a.createElement(
+                      "h3",
+                      { className: "cert-body-subtitle" },
+                      "UNA"
+                    )
+                  )
+                ),
+                c.a.createElement(
+                  "div",
+                  { className: "cert-card" },
+                  c.a.createElement(
+                    "div",
+                    { className: "content" },
+                    c.a.createElement(
+                      "a",
+                      {
+                        target: "_blank",
+                        rel: "noopener noreferrer",
+                      },
+                      c.a.createElement("div", {
+                        className: "content-overlay",
+                      }),
+                      c.a.createElement(
+                        "div",
+                        {
+                          className: "cert-header",
+                          style: { backgroundColor: "#dddddd" },
+                        },
+                        c.a.createElement("img", {
+                          className: "logo_img",
+                          src: "static/media/cenecoop.png",
+                          alt: "CENECOOP",
+                        })
+                      ),
+                      c.a.createElement(
+                        "div",
+                        { className: "content-details fadeIn-top" },
+                        c.a.createElement(
+                          "h3",
+                          { className: "title" },
+                          "Certificate"
+                        )
+                      )
+                    )
+                  ),
+                  c.a.createElement(
+                    "div",
+                    { className: "cert-body" },
+                    c.a.createElement(
+                      "h2",
+                      { className: "cert-body-title" },
+                      "Accounting"
+                    ),
+                    c.a.createElement(
+                      "h3",
+                      { className: "cert-body-subtitle" },
+                      "CENECOOP"
+                    )
+                  )
+                ),
+                c.a.createElement(
+                  "div",
+                  { className: "cert-card" },
+                  c.a.createElement(
+                    "div",
+                    { className: "content" },
+                    c.a.createElement(
+                      "a",
+                      {
+                        href: "https://www.coursera.org/account/accomplishments/verify/YQZ2HW6WTXXP",
+                        target: "_blank",
+                        rel: "noopener noreferrer",
+                      },
+                      c.a.createElement("div", {
+                        className: "content-overlay",
+                      }),
+                      c.a.createElement(
+                        "div",
+                        {
+                          className: "cert-header",
+                          style: { backgroundColor: "#dddddd" },
+                        },
+                        c.a.createElement("img", {
+                          className: "logo_img",
+                          src: "static/media/uandes.png",
+                          alt: "business",
+                        })
+                      ),
+                      c.a.createElement(
+                        "div",
+                        { className: "content-details fadeIn-top" },
+                        c.a.createElement(
+                          "h3",
+                          { className: "title" },
+                          "Certificate"
+                        )
+                      )
+                    )
+                  ),
+                  c.a.createElement(
+                    "div",
+                    { className: "cert-body" },
+                    c.a.createElement(
+                      "h2",
+                      { className: "cert-body-title" },
+                      "Fundamentals of business finance"
+                    ),
+                    c.a.createElement(
+                      "h3",
+                      { className: "cert-body-subtitle" },
+                      "Universidad de los andes"
+                    )
+                  )
+                ),
+                c.a.createElement(
+                  "div",
+                  { className: "cert-card" },
+                  c.a.createElement(
+                    "div",
+                    { className: "content" },
+                    c.a.createElement(
+                      "a",
+                      {
+                        href: "https://www.coursera.org/account/accomplishments/certificate/NRANJA66Y2YA",
+                        target: "_blank",
+                        rel: "noopener noreferrer",
+                      },
+                      c.a.createElement("div", {
+                        className: "content-overlay",
+                      }),
+                      c.a.createElement(
+                        "div",
+                        {
+                          className: "cert-header",
+                          style: { backgroundColor: "#dddddd" },
+                        },
+                        c.a.createElement("img", {
+                          className: "logo_img",
+                          src: "static/media/camcop.png",
+                          alt: "CAMCOP",
+                        })
+                      ),
+                      c.a.createElement(
+                        "div",
+                        { className: "content-details fadeIn-top" },
+                        c.a.createElement(
+                          "h3",
+                          { className: "title" },
+                          "Certificate"
+                        )
+                      )
+                    )
+                  ),
+                  c.a.createElement(
+                    "div",
+                    { className: "cert-body" },
+                    c.a.createElement(
+                      "h2",
+                      { className: "cert-body-title" },
+                      "Dynamic tables"
+                    ),
+                    c.a.createElement(
+                      "h3",
+                      { className: "cert-body-subtitle" },
+                      "CAMCOP"
+                    )
+                  )
+                ),
+                c.a.createElement(
+                  "div",
+                  { className: "cert-card" },
+                  c.a.createElement(
+                    "div",
+                    { className: "content" },
+                    c.a.createElement(
+                      "a",
+                      {
+                        href: "https://www.coursera.org/account/accomplishments/certificate/QLKRRN8VGDLT",
+                        target: "_blank",
+                        rel: "noopener noreferrer",
+                      },
+                      c.a.createElement("div", {
+                        className: "content-overlay",
+                      }),
+                      c.a.createElement(
+                        "div",
+                        {
+                          className: "cert-header",
+                          style: { backgroundColor: "#dddddd" },
+                        },
+                        c.a.createElement("img", {
+                          className: "logo_img",
+                          src: "static/media/uab.png",
+                          alt: "UAB",
+                        })
+                      ),
+                      c.a.createElement(
+                        "div",
+                        { className: "content-details fadeIn-top" },
+                        c.a.createElement(
+                          "h3",
+                          { className: "title" },
+                          "Certificate"
+                        )
+                      )
+                    )
+                  ),
+                  c.a.createElement(
+                    "div",
+                    { className: "cert-body" },
+                    c.a.createElement(
+                      "h2",
+                      { className: "cert-body-title" },
+                      "Microsoft 365"
+                    ),
+                    c.a.createElement(
+                      "h3",
+                      { className: "cert-body-subtitle" },
+                      "Universidad Autónoma de Barcelona"
+                    )
+                  )
+                ),
+                c.a.createElement(
+                  "div",
+                  { className: "cert-card" },
+                  c.a.createElement(
+                    "div",
+                    { className: "content" },
+                    c.a.createElement(
+                      "a",
+                      {
+                        href: "https://www.coursera.org/account/accomplishments/certificate/P5L3T3D9NJZ7",
+                        target: "_blank",
+                        rel: "noopener noreferrer",
+                      },
+                      c.a.createElement("div", {
+                        className: "content-overlay",
+                      }),
+                      c.a.createElement(
+                        "div",
+                        {
+                          className: "cert-header",
+                          style: { backgroundColor: "#dddddd" },
+                        },
+                        c.a.createElement("img", {
+                          className: "logo_img",
+                          src: "static/media/unam.png",
+                          alt: "UNAM",
+                        })
+                      ),
+                      c.a.createElement(
+                        "div",
+                        { className: "content-details fadeIn-top" },
+                        c.a.createElement(
+                          "h3",
+                          { className: "title" },
+                          "Certificate"
+                        )
+                      )
+                    )
+                  ),
+                  c.a.createElement(
+                    "div",
+                    { className: "cert-body" },
+                    c.a.createElement(
+                      "h2",
+                      { className: "cert-body-title" },
+                      "Accounting for non-accountants"
+                    ),
+                    c.a.createElement(
+                      "h3",
+                      { className: "cert-body-subtitle" },
+                      "Universidad Nacional Autónoma de México"
+                    )
+                  )
+                ),
+                c.a.createElement(
+                  "div",
+                  { className: "cert-card" },
+                  c.a.createElement(
+                    "div",
+                    { className: "content" },
+                    c.a.createElement(
+                      "a",
+                      {
+                        href: "https://fcas.cclearning.accenture.com/cas/login?service=https%3A%2F%2Ffundaula-lms.cclearning.accenture.com%2Flogin%2Findex.php",
+                        target: "_blank",
+                        rel: "noopener noreferrer",
+                      },
+                      c.a.createElement("div", {
+                        className: "content-overlay",
+                      }),
+                      c.a.createElement(
+                        "div",
+                        {
+                          className: "cert-header",
+                          style: { backgroundColor: "#dddddd" },
+                        },
+                        c.a.createElement("img", {
+                          className: "logo_img",
+                          src: "static/media/accenture.png",
+                          alt: "accenture",
+                        })
+                      ),
+                      c.a.createElement(
+                        "div",
+                        { className: "content-details fadeIn-top" },
+                        c.a.createElement(
+                          "h3",
+                          { className: "title" },
+                          "Certificate"
+                        )
+                      )
+                    )
+                  ),
+                  c.a.createElement(
+                    "div",
+                    { className: "cert-body" },
+                    c.a.createElement(
+                      "h2",
+                      { className: "cert-body-title" },
+                      "Customer service"
+                    ),
+                    c.a.createElement(
+                      "h3",
+                      { className: "cert-body-subtitle" },
+                      "Accenture"
                     )
                   )
                 )
