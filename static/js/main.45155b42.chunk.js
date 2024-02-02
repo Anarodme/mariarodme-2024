@@ -468,7 +468,11 @@
                 ),
                 c.a.createElement(
                   "a",
-                  { download: "", href: "static/media/cv.pdf", className: "button button--flex" },
+                  {
+                    download: "",
+                    href: "static/media/cv.pdf",
+                    className: "button button--flex",
+                  },
                   "Download CV",
                   c.a.createElement(
                     "svg",
@@ -792,93 +796,91 @@
           (t(25),
           (function () {
             let expandedIndex = null;
-          
-            // Función para manejar el clic en las tarjetas
+
             const handleCardClick = (index) => {
-              // Encuentra la tarjeta por su índice
-              const card = document.querySelector('.degree-card-' + index);
-              
-              // Encuentra la información dentro de la tarjeta
-              const info = card.querySelector('.degree-info');
-              
-              // Si la tarjeta está expandida, la contrae; de lo contrario, la expande
-              if (info.style.display === 'block') {
-                info.style.display = 'none';
+              const card = document.querySelector(".degree-card-" + index);
+
+              const info = card.querySelector(".degree-info");
+
+              if (info.style.display === "block") {
+                info.style.display = "none";
               } else {
-                // Contrae todas las tarjetas antes de expandir la actual
-                const allInfos = document.querySelectorAll('.degree-info');
-                allInfos.forEach(info => {
-                  info.style.display = 'none';
+                const allInfos = document.querySelectorAll(".degree-info");
+                allInfos.forEach((info) => {
+                  info.style.display = "none";
                 });
-                info.style.display = 'block';
+                info.style.display = "block";
               }
             };
-          
-            // Crea el contenedor principal
-            const educationContainer = document.createElement('div');
-            educationContainer.className = 'education-container';
-            educationContainer.id = 'education';
-          
-            // Crea el título
-            const sectionTitle = document.createElement('h2');
-            sectionTitle.className = 'section-title';
-            sectionTitle.appendChild(document.createTextNode('Education'));
+
+            const educationContainer = document.createElement("div");
+            educationContainer.className = "education-container";
+            educationContainer.id = "education";
+
+        
+            const sectionTitle = document.createElement("h2");
+            sectionTitle.className = "section-title";
+            sectionTitle.appendChild(document.createTextNode("Education"));
             educationContainer.appendChild(sectionTitle);
-          
-            // Crea el contenedor de tarjetas
-            const cardsContainer = document.createElement('div');
-            cardsContainer.className = 'degree-cards-container';
-          
-            // Crea la primera tarjeta
-            const card1 = createCard(0, 'Universidad Técnica Nacional', "Bachelor's degree Business Management Administration",
-              'I have studied basic business administration subjects like marketing, project management, cost accounting, occupational safety, business law, etc. Apart from this, I have done courses on Word, Excel, spreadsheets, customer service.');
+
+            const cardsContainer = document.createElement("div");
+            cardsContainer.className = "degree-cards-container";
+
+            const card1 = createCard(
+              0,
+              "Universidad Técnica Nacional",
+              "Bachelor's degree Business Management Administration",
+              "static/media/logoUtn.png", 
+              "I have studied basic business administration subjects like marketing, project management, cost accounting, occupational safety, business law, etc. Apart from this, I have done courses on Word, Excel, spreadsheets, customer service."
+            );
             cardsContainer.appendChild(card1);
-          
-            // Crea la segunda tarjeta
-            const card2 = createCard(1, 'CTP Ricardo Castro Beer', 'Executive Secretarial Technician',
-              'Proficient in various office software suites such as Microsoft Office (Word, Excel, PowerPoint, Outlook) and Google Workspace. Experienced in maintaining confidential records, drafting documents, and proofreading reports with a high level of accuracy. Strong interpersonal and communication skills, adept at interacting with clients, executives, and colleagues professionally and courteously. Knowledgeable about office etiquette, protocols, and best practices to maintain a professional and organized work environment. Capable of multitasking and prioritizing tasks efficiently to meet deadlines and support the smooth functioning of the executive office.');
+
+            const card2 = createCard(
+              1,
+              "CTP Ricardo Castro Beer",
+              "Executive Secretarial Technician",
+              "static/media/logoCtp.png", 
+              "Proficient in various office software suites such as Microsoft Office (Word, Excel, PowerPoint, Outlook) and Google Workspace. Experienced in maintaining confidential records, drafting documents, and proofreading reports with a high level of accuracy. Strong interpersonal and communication skills, adept at interacting with clients, executives, and colleagues professionally and courteously. Knowledgeable about office etiquette, protocols, and best practices to maintain a professional and organized work environment. Capable of multitasking and prioritizing tasks efficiently to meet deadlines and support the smooth functioning of the executive office."
+            );
             cardsContainer.appendChild(card2);
-          
+
             educationContainer.appendChild(cardsContainer);
-          
-            // Agrega el contenedor al documento
+
             document.body.appendChild(educationContainer);
-          
-            // Función para crear una tarjeta
-            function createCard(index, title, subtitle, infoText) {
-              const card = document.createElement('div');
-              card.className = 'degree-card degree-card-' + index;
-              card.onclick = function() {
+
+            function createCard(index, title, subtitle, imageUrl, infoText) {
+              const card = document.createElement("div");
+              card.className = "degree-card degree-card-" + index;
+              card.onclick = function () {
                 handleCardClick(index);
               };
-          
-              const logo = document.createElement('img');
-              logo.src = 'static/media/logoUtn.png'; // Ruta de la imagen
+
+              const logo = document.createElement("img");
+              logo.src = imageUrl;
               logo.alt = title;
-              logo.className = 'degree-logo';
+              logo.className = "degree-logo";
               card.appendChild(logo);
-          
-              const titleElement = document.createElement('h3');
-              titleElement.className = 'degree-title';
+
+              const titleElement = document.createElement("h3");
+              titleElement.className = "degree-title";
               titleElement.appendChild(document.createTextNode(title));
               card.appendChild(titleElement);
-          
-              const subtitleElement = document.createElement('h4');
-              subtitleElement.className = 'degree-subtitle';
+
+              const subtitleElement = document.createElement("h4");
+              subtitleElement.className = "degree-subtitle";
               subtitleElement.appendChild(document.createTextNode(subtitle));
               card.appendChild(subtitleElement);
-          
-              const info = document.createElement('div');
-              info.className = 'degree-info';
-              info.style.display = 'none'; // Por defecto, oculta la información
+
+              const info = document.createElement("div");
+              info.className = "degree-info";
+              info.style.display = "none"; // Por defecto, oculta la información
               info.appendChild(document.createTextNode(infoText));
               card.appendChild(info);
-          
+
               return card;
             }
-          })()
-          )
-    
+          })());
+
 
       T = t(11),
         W =
