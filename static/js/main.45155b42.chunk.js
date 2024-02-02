@@ -789,140 +789,143 @@
           );
         },
         j =
-          (t(25),
-          function () {
-            let expandedIndex = null;
-
-            const handleCardClick = (index) => {
-              if (expandedIndex === index) {
-                expandedIndex = null;
-              } else {
-                expandedIndex = index;
-              }
-              render();
-            };
-
-            return c.a.createElement(
+        (t(25),
+        function () {
+          let expandedIndex = null;
+        
+          const handleCardClick = (index) => {
+            if (expandedIndex === index) {
+              expandedIndex = null;
+            } else {
+              expandedIndex = index;
+            }
+            // Se debe llamar a una función de renderizado aquí
+            // Supongo que render() es una función que renderiza tu componente
+            render();
+          };
+        
+          return c.a.createElement(
+            "div",
+            { className: "education-container", id: "education" },
+            c.a.createElement(
+              "h2",
+              { className: "section-title" },
+              "Education"
+            ),
+            c.a.createElement(
               "div",
-              { className: "education-container", id: "education" },
+              { className: "degree-cards-container" },
               c.a.createElement(
-                "h2",
-                { className: "section-title" },
-                "Education"
+                "div",
+                {
+                  key: 0,
+                  className: `degree-card ${
+                    expandedIndex === 0 ? "expanded" : ""
+                  }`,
+                  onClick: () => handleCardClick(0),
+                },
+                c.a.createElement("img", {
+                  src: "static/media/logoUtn.png",
+                  alt: "Universidad Técnica Nacional",
+                  className: "degree-logo",
+                }),
+                c.a.createElement(
+                  "h3",
+                  { className: "degree-title" },
+                  "Universidad Técnica Nacional"
+                ),
+                c.a.createElement(
+                  "h4",
+                  { className: "degree-subtitle" },
+                  "Bachelor's degree Business Management Administration"
+                ),
+                expandedIndex === 0 &&
+                  c.a.createElement(
+                    "div",
+                    { className: "degree-info" },
+                    c.a.createElement(
+                      "p",
+                      null,
+                      "I have studied basic business administration subjects like marketing, project management, cost accounting, occupational safety, business law, etc."
+                    ),
+                    c.a.createElement(
+                      "p",
+                      null,
+                      "Apart from this, I have done courses on Word, Excel, spreadsheets, customer service."
+                    ),
+                    c.a.createElement("a", {
+                      href: "#",
+                      target: "_blank",
+                      rel: "noopener noreferrer",
+                    })
+                  )
               ),
               c.a.createElement(
                 "div",
-                { className: "degree-cards-container" },
+                {
+                  key: 1,
+                  className: `degree-card ${
+                    expandedIndex === 1 ? "expanded" : ""
+                  }`,
+                  onClick: () => handleCardClick(1),
+                },
+                c.a.createElement("img", {
+                  src: "static/media/logoCtp.png",
+                  alt: "CTP Ricardo Castro Beer",
+                  className: "degree-logo",
+                }),
                 c.a.createElement(
-                  "div",
-                  {
-                    key: 0,
-                    className: `degree-card ${
-                      expandedIndex === 0 ? "expanded" : ""
-                    }`,
-                    onClick: () => handleCardClick(0),
-                  },
-                  c.a.createElement("img", {
-                    src: "static/media/logoUtn.png",
-                    alt: "Universidad Técnica Nacional",
-                    className: "degree-logo",
-                  }),
-                  c.a.createElement(
-                    "h3",
-                    { className: "degree-title" },
-                    "Universidad Técnica Nacional"
-                  ),
-                  c.a.createElement(
-                    "h4",
-                    { className: "degree-subtitle" },
-                    "Bachelor's degree Business Management Administration"
-                  ),
-                  expandedIndex === 0 &&
-                    c.a.createElement(
-                      "div",
-                      { className: "degree-info" },
-                      c.a.createElement(
-                        "p",
-                        null,
-                        "I have studied basic business administration subjects like marketing, project management, cost accounting, occupational safety, business law, etc."
-                      ),
-                      c.a.createElement(
-                        "p",
-                        null,
-                        "Apart from this, I have done courses on Word, Excel, spreadsheets, customer service."
-                      ),
-                      c.a.createElement("a", {
-                        href: "#",
-                        target: "_blank",
-                        rel: "noopener noreferrer",
-                      })
-                    )
+                  "h3",
+                  { className: "degree-title" },
+                  "CTP Ricardo Castro Beer"
                 ),
                 c.a.createElement(
-                  "div",
-                  {
-                    key: 1,
-                    className: `degree-card ${
-                      expandedIndex === 1 ? "expanded" : ""
-                    }`,
-                    onClick: () => handleCardClick(1),
-                  },
-                  c.a.createElement("img", {
-                    src: "static/media/logoCtp.png",
-                    alt: "CTP Ricardo Castro Beer",
-                    className: "degree-logo",
-                  }),
+                  "h4",
+                  { className: "degree-subtitle" },
+                  "Executive Secretarial Technician"
+                ),
+                expandedIndex === 1 &&
                   c.a.createElement(
-                    "h3",
-                    { className: "degree-title" },
-                    "CTP Ricardo Castro Beer"
-                  ),
-                  c.a.createElement(
-                    "h4",
-                    { className: "degree-subtitle" },
-                    "Executive Secretarial Technician"
-                  ),
-                  expandedIndex === 1 &&
+                    "div",
+                    { className: "degree-info" },
                     c.a.createElement(
-                      "div",
-                      { className: "degree-info" },
-                      c.a.createElement(
-                        "p",
-                        null,
-                        "Proficient in various office software suites such as Microsoft Office (Word, Excel, PowerPoint, Outlook) and Google Workspace."
-                      ),
-                      c.a.createElement(
-                        "p",
-                        null,
-                        "Experienced in maintaining confidential records, drafting documents, and proofreading reports with a high level of accuracy."
-                      ),
-                      c.a.createElement(
-                        "p",
-                        null,
-                        "Strong interpersonal and communication skills, adept at interacting with clients, executives, and colleagues professionally and courteously."
-                      ),
-                      c.a.createElement(
-                        "p",
-                        null,
-                        "Knowledgeable about office etiquette, protocols, and best practices to maintain a professional and organized work environment."
-                      ),
-                      c.a.createElement(
-                        "p",
-                        null,
-                        "Capable of multitasking and prioritizing tasks efficiently to meet deadlines and support the smooth functioning of the executive's office."
-                      ),
-                      c.a.createElement("a", {
-                        href: "#",
-                        target: "_blank",
-                        rel: "noopener noreferrer",
-                      })
-                    )
-                )
+                      "p",
+                      null,
+                      "Proficient in various office software suites such as Microsoft Office (Word, Excel, PowerPoint, Outlook) and Google Workspace."
+                    ),
+                    c.a.createElement(
+                      "p",
+                      null,
+                      "Experienced in maintaining confidential records, drafting documents, and proofreading reports with a high level of accuracy."
+                    ),
+                    c.a.createElement(
+                      "p",
+                      null,
+                      "Strong interpersonal and communication skills, adept at interacting with clients, executives, and colleagues professionally and courteously."
+                    ),
+                    c.a.createElement(
+                      "p",
+                      null,
+                      "Knowledgeable about office etiquette, protocols, and best practices to maintain a professional and organized work environment."
+                    ),
+                    c.a.createElement(
+                      "p",
+                      null,
+                      "Capable of multitasking and prioritizing tasks efficiently to meet deadlines and support the smooth functioning of the executive's office."
+                    ),
+                    c.a.createElement("a", {
+                      href: "#",
+                      target: "_blank",
+                      rel: "noopener noreferrer",
+                    })
+                  )
               )
-            );
-          
-          }),
+            )
+          );
+        
+        }),
 
+    
       T = t(11),
         W =
           (t(29),
