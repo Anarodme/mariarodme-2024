@@ -1,4 +1,3 @@
-import ReactDOM from 'react-dom';
 (window.webpackJsonp = window.webpackJsonp || []).push([
   [0],
   [
@@ -922,7 +921,7 @@ import ReactDOM from 'react-dom';
                 )
               );
             };
-            ReactDOM.render(render(), document.getElementById("education"));
+            render(render(), document.getElementById("education"));
           })()),
 
         T = t(11),
