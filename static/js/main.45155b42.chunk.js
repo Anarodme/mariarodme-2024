@@ -798,14 +798,31 @@
           let expandedIndex = null;
 
           const handleCardClick = (index) => {
-            if (expandedIndex === index) {
-              expandedIndex = null;
-            } else {
-              expandedIndex = index;
-            }
-            render();
+              const educationContainer = document.getElementById('education');
+      
+              // Actualiza el estado de expandedIndex
+              expandedIndex = expandedIndex === index ? null : index;
+      
+              // Recorre todas las tarjetas para actualizar su clase "expanded"
+              const degreeCards = educationContainer.getElementsByClassName('degree-card');
+              for (let i = 0; i < degreeCards.length; i++) {
+                  const card = degreeCards[i];
+                  if (i === index) {
+                      card.classList.toggle('expanded', true);
+                  } else {
+                      card.classList.toggle('expanded', false);
+                  }
+              }
           };
-
+      
+          // Asigna los manejadores de eventos a las tarjetas al cargar la página
+          document.addEventListener('DOMContentLoaded', function () {
+              const degreeCards = document.querySelectorAll('.degree-card');
+              degreeCards.forEach((card, index) => {
+                  card.addEventListener('click', () => handleCardClick(index));
+              });
+          });
+    
           return c.a.createElement(
             "div",
             { className: "education-container", id: "education" },
