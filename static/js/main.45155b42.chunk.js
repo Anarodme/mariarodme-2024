@@ -797,14 +797,16 @@
           (function () {
             let expandedIndex = null;
 
+            // Función para manejar el clic en las tarjetas
             const handleCardClick = (index) => {
               const card = document.querySelector(".degree-card-" + index);
-
               const info = card.querySelector(".degree-info");
 
+              // Si la tarjeta está expandida, la contrae; de lo contrario, la expande
               if (info.style.display === "block") {
                 info.style.display = "none";
               } else {
+                // Contrae todas las tarjetas antes de expandir la actual
                 const allInfos = document.querySelectorAll(".degree-info");
                 allInfos.forEach((info) => {
                   info.style.display = "none";
@@ -813,76 +815,94 @@
               }
             };
 
-            const educationContainer = document.createElement("div");
-            educationContainer.className = "education-container";
+            // Crea un elemento div con la clase y el texto especificados
+            const createDivElement = (className, textContent) => {
+              const div = document.createElement("div");
+              div.className = className;
+              div.textContent = textContent;
+              return div;
+            };
+
+            // Crea la tarjeta de educación
+            const createEducationCard = (
+              index,
+              title,
+              subtitle,
+              imageUrl,
+              infoText
+            ) => {
+              const card = createDivElement(
+                "degree-card degree-card-" + index,
+                ""
+              );
+
+              card.onclick = function () {
+                handleCardClick(index);
+              };
+
+              card.appendChild(createDivElement("degree-logo", ""));
+              card
+                .querySelector(".degree-logo")
+                .appendChild(createDivElement("", title));
+
+              const img = document.createElement("img");
+              img.src = imageUrl;
+              img.alt = title;
+              card.querySelector(".degree-logo").appendChild(img);
+
+              card.appendChild(createDivElement("degree-title", title));
+              card.appendChild(createDivElement("degree-subtitle", subtitle));
+
+              const info = createDivElement("degree-info", infoText);
+              info.style.display = "none";
+              card.appendChild(info);
+
+              return card;
+            };
+
+            // Crea el contenedor principal de educación
+            const educationContainer = createDivElement(
+              "education-container",
+              ""
+            );
             educationContainer.id = "education";
 
-        
-            const sectionTitle = document.createElement("h2");
-            sectionTitle.className = "section-title";
-            sectionTitle.appendChild(document.createTextNode("Education"));
-            educationContainer.appendChild(sectionTitle);
+            // Crea el título de educación
+            educationContainer.appendChild(
+              createDivElement("section-title", "Education")
+            );
 
-            const cardsContainer = document.createElement("div");
-            cardsContainer.className = "degree-cards-container";
+            // Crea el contenedor de tarjetas de educación
+            const cardsContainer = createDivElement(
+              "degree-cards-container",
+              ""
+            );
 
-            const card1 = createCard(
+            // Crea y agrega las tarjetas de educación al contenedor
+            const card1 = createEducationCard(
               0,
               "Universidad Técnica Nacional",
               "Bachelor's degree Business Management Administration",
-              "static/media/logoUtn.png", 
+              "static/media/logoUtn.png",
               "I have studied basic business administration subjects like marketing, project management, cost accounting, occupational safety, business law, etc. Apart from this, I have done courses on Word, Excel, spreadsheets, customer service."
             );
             cardsContainer.appendChild(card1);
 
-            const card2 = createCard(
+            const card2 = createEducationCard(
               1,
               "CTP Ricardo Castro Beer",
               "Executive Secretarial Technician",
-              "static/media/logoCtp.png", 
+              "static/media/logoCtp.png",
               "Proficient in various office software suites such as Microsoft Office (Word, Excel, PowerPoint, Outlook) and Google Workspace. Experienced in maintaining confidential records, drafting documents, and proofreading reports with a high level of accuracy. Strong interpersonal and communication skills, adept at interacting with clients, executives, and colleagues professionally and courteously. Knowledgeable about office etiquette, protocols, and best practices to maintain a professional and organized work environment. Capable of multitasking and prioritizing tasks efficiently to meet deadlines and support the smooth functioning of the executive office."
             );
             cardsContainer.appendChild(card2);
 
             educationContainer.appendChild(cardsContainer);
 
+            // Agrega el contenedor principal al cuerpo del documento
             document.body.appendChild(educationContainer);
-
-            function createCard(index, title, subtitle, imageUrl, infoText) {
-              const card = document.createElement("div");
-              card.className = "degree-card degree-card-" + index;
-              card.onclick = function () {
-                handleCardClick(index);
-              };
-
-              const logo = document.createElement("img");
-              logo.src = imageUrl;
-              logo.alt = title;
-              logo.className = "degree-logo";
-              card.appendChild(logo);
-
-              const titleElement = document.createElement("h3");
-              titleElement.className = "degree-title";
-              titleElement.appendChild(document.createTextNode(title));
-              card.appendChild(titleElement);
-
-              const subtitleElement = document.createElement("h4");
-              subtitleElement.className = "degree-subtitle";
-              subtitleElement.appendChild(document.createTextNode(subtitle));
-              card.appendChild(subtitleElement);
-
-              const info = document.createElement("div");
-              info.className = "degree-info";
-              info.style.display = "none"; // Por defecto, oculta la información
-              info.appendChild(document.createTextNode(infoText));
-              card.appendChild(info);
-
-              return card;
-            }
           })()),
-
-
-      T = t(11),
+        T = t(11),
         W =
           (t(29),
           function () {
@@ -1117,24 +1137,24 @@
               )
             );
           }),
-          Z = function () {
-            return c.a.createElement(
-              c.a.Fragment,
-              null,
-              c.a.createElement(r, null),
-              c.a.createElement(
-                "main",
-                { className: "main" },
-                c.a.createElement(u, null),
-                c.a.createElement(p, null),
-                c.a.createElement(k, null),
-                c.a.createElement(j, null),
-                c.a.createElement(W, null)
-              ),
-              c.a.createElement(G, null),
-              c.a.createElement(F, null)
-            );
-          };
+        Z = function () {
+          return c.a.createElement(
+            c.a.Fragment,
+            null,
+            c.a.createElement(r, null),
+            c.a.createElement(
+              "main",
+              { className: "main" },
+              c.a.createElement(u, null),
+              c.a.createElement(p, null),
+              c.a.createElement(k, null),
+              c.a.createElement(j, null),
+              c.a.createElement(W, null)
+            ),
+            c.a.createElement(G, null),
+            c.a.createElement(F, null)
+          );
+        };
         i.a
           .createRoot(document.getElementById("root"))
           .render(
